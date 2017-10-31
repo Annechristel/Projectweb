@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+
+/*  FONTS TOEVOEGEN  */
+
+@font-face {
+	font-family: dfds-bold;
+	src: url("fonts/dfds-bold.ttf");
+}
+
+@font-face {
+	font-family: dfds-light;
+	src: url("fonts/dfds-light.ttf")
+}
+
+@font-face {
+	font-family: segoe-normal;
+	src: url("fonts/SEGOEUI.TTF")
+}
+
+
+body > form {
+	padding: 2em;
+	background: white;
+	width: 25em;
+	max-width: 40em;
+	margin-left: 1.5em;
+	margin-top: 2em;
+}
+
+fieldset {
+	display: flex;
+	border: none;
+	transition: all .2s;
+}
+
+
+
+
+fieldset .feedback {
+	display: none;
+	color: White;
+	background: green;
+	padding: .25em;
+}
+
+fieldset:invalid .feedback {
+	display: block;
+}
+
+
+fieldset input:invalid {
+	border-color: green;
+}
+
+
+fieldset:disabled {
+	border-color: #eee;
+	background-color: #f9f9f9;
+}
+
+
+fieldset input {
+	border-color: #005184;
+	padding: 0.7em;
+	margin-bottom: 1.5em;
+	width: 30em;
+	transition: all .2s;
+}
+
+fieldset button {
+	background-color: #f6861f;
+	font-size: 1em;
+	color: white;
+	font-family: dfds-bold;
+	padding: 0.5em 7em 0.5em 1em;
+	margin-top: 1.5em;
+}
+
+fieldset button:focus {
+	transform: scale(1.1, 1.1);
+}
+
+fieldset label {
+	font-family: dfds-light;
+	margin-bottom: 0.3em;
+}
+
+legend {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+
+
+
+
+
+
+@media(min-width: 44em) {
+	body > form {
+		margin: 2em auto;
+	}
+}
+
+@media(max-width: 30em) {
+	fieldset input {
+		width: 20em;
+	}
+
+	body > form {
+		width: 23em;
+	}
+}

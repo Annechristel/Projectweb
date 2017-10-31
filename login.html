@@ -1,22 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registreren</title>
+	<link rel="stylesheet" href="loginstylesheet.css">
+	<link rel="stylesheet" href="header.css">
 </head>
+
 <body>
-    <form>
-        <fieldset>
-            <legend>Login</legend>
-            <label for="email">E-mail</label>
-            <input id="email" type="email">
-            <label for="naam">Naam</label>
-            <input id="naam" type="text">
-            <label for="wachtwoord">Wachtwoord</label>
-            <input id="wachtwoord" type="text">
-    
-        </fieldset>
-    </form>
-    
+	<header>
+		<a href="index.html"><img id="logo" src="images/Dfds_2015_logo.svg.png" alt="Logo DFDS"></a>
+		<nav>
+			<ul>
+				<li>
+					<a href="login.html">
+						<img id="save" src="images/save.png" alt="Opgeslagen boeken">
+					</a>
+				</li>
+				<li>
+					<a href="login.html">
+						<img id="profiel" src="images/user.png" alt="Naar profiel navigeren">
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<form action="/">
+			<input type="text" id="zoekbalk" placeholder="Zoek verhaal">
+			<img id="search" src="images/search.png" alt="Een verhaal zoeken">
+		</form>
+	</header>
+
+	<form>
+		<fieldset>
+			<legend>Maak nu een account aan!</legend>
+			<label for="email">E-mail</label>
+			<input id="email" type="email" placeholder="Email">
+			<label for="naam">Naam</label>
+			<input id="naam" type="text" placeholder="Naam">
+			<label for="wachtwoord">Wachtwoord</label>
+			<input id="wachtwoord" type="text" placeholder="Wachtwoord">
+			<label for="wachtwoord2">Herhaal wachtwoord</label>
+			<input id="wachtwoord2" type="text" placeholder="Herhaal wachtwoord">
+			<p class="feedback">Je hebt alles goed ingevuld, meld je nu snel aan!</p>
+			<button>Registreren</button>
+		</fieldset>
+	</form>
+
 </body>
+
 </html>
