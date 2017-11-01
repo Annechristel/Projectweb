@@ -12,15 +12,12 @@ function show() {
 	save.classList.toggle('hide');
 	save2.classList.toggle('show');
 
-	//	console.error('aigfiasfgaifugafiagsi');
 }
 save3.addEventListener('click', show);
 
 function showHeart() {
 	like.classList.toggle('hide');
 	like2.classList.toggle('show');
-
-	//	console.error('aigfiasfgaifugafiagsi');
 }
 
 like.addEventListener('click', showHeart);
